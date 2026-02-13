@@ -12,16 +12,8 @@ public class BasicExample {
         BarcodeGeneratorAPIClient client = new BarcodeGeneratorAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Request body
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;data&quot;, &quot;51001544700&quot;);
-        parameters.put(&quot;type&quot;, &quot;code128&quot;);
-        parameters.put(&quot;lineColor&quot;, &quot;#000000&quot;);
-        parameters.put(&quot;backgroundColor&quot;, &quot;#FFFFFF&quot;);
-        parameters.put(&quot;displayValue&quot;, true);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
