@@ -14,24 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/barcodegenerator'
 
 def call_barcodegenerator_api():
     """
-    Make a POST request to the Barcode Generator API
+    Make a GET request to the Barcode Generator API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;data&#x27;: &#x27;51001544700&#x27;,
-    &#x27;type&#x27;: &#x27;code128&#x27;,
-    &#x27;lineColor&#x27;: &#x27;#000000&#x27;,
-    &#x27;backgroundColor&#x27;: &#x27;#FFFFFF&#x27;,
-    &#x27;displayValue&#x27;: true
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
