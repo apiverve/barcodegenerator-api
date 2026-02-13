@@ -9,26 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/barcodegenerator';
 
 /**
- * Make a POST request to the Barcode Generator API
+ * Make a GET request to the Barcode Generator API
  */
 async function callBarcodeGeneratorAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;data&quot;: &quot;51001544700&quot;,
-    &quot;type&quot;: &quot;code128&quot;,
-    &quot;lineColor&quot;: &quot;#000000&quot;,
-    &quot;backgroundColor&quot;: &quot;#FFFFFF&quot;,
-    &quot;displayValue&quot;: true
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
