@@ -1,1 +1,3 @@
-from .apiClient import BarcodegeneratorAPIClient
+from .apiClient import BarcodegeneratorAPIClient, BarcodegeneratorAPIClientError
+
+__all__ = ['BarcodegeneratorAPIClient', 'BarcodegeneratorAPIClientError']
