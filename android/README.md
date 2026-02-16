@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:barcodegenerator-api:1.1.13'
+    implementation 'com.github.apiverve:barcodegenerator-api:1.1.14'
 }
 ```
 
@@ -47,10 +47,10 @@ BarcodeGeneratorAPIClient client = new BarcodeGeneratorAPIClient("YOUR_API_KEY")
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("data", "1234567890");
+    parameters.put("data", "51001544700");
     parameters.put("type", "code128");
-    parameters.put("lineColor", "black");
-    parameters.put("backgroundColor", "white");
+    parameters.put("lineColor", "#000000");
+    parameters.put("backgroundColor", "#FFFFFF");
     parameters.put("displayValue", true);
 
     // Execute the request
