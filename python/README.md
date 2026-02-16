@@ -44,7 +44,13 @@ from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = BarcodegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 
 try:
     # Make the API call
@@ -82,7 +88,13 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 ```
 
 ###### Simple Request
@@ -124,7 +136,13 @@ from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient, Barco
 
 api = BarcodegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 
 try:
     result = api.execute(query)
@@ -145,7 +163,13 @@ from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient, Barco
 
 api = BarcodegeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 
 try:
     result = api.execute(query)
@@ -179,7 +203,13 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient, BarcodegeneratorAPIClientError
 
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 
 # Using context manager ensures proper cleanup
 with BarcodegeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -205,7 +235,13 @@ from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient
 # Enable debug mode
 api = BarcodegeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -220,8 +256,15 @@ from apiverve_barcodegenerator.apiClient import BarcodegeneratorAPIClient
 
 api = BarcodegeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "data": "51001544700",
+    "type": "code128",
+    "lineColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "displayValue": true
+}
+
 try:
-    query = { "data": "51001544700", "type": "code128", "lineColor": "#000000", "backgroundColor": "#FFFFFF", "displayValue": true }
     result = api.execute(query)
     print(result)
 finally:
