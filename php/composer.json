@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/barcodegenerator",
+    "description": "Barcode Generator is a simple tool for generating barcodes from data. It returns a URL to the generated image of the barcode.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "barcodegenerator",
+        "barcode generator",
+        "barcode generation",
+        "barcode generate",
+        "barcode api",
+        "barcode tool"
+    ],
+    "homepage": "https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/barcodegenerator",
+        "source": "https://github.com/apiverve/barcodegenerator-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Barcodegenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Barcodegenerator\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
