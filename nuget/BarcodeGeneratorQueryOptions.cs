@@ -38,6 +38,6 @@ namespace APIVerve.API.BarcodeGenerator
         /// Whether to display the value below the barcode (default: true)
         /// </summary>
         [JsonProperty("displayValue")]
-        public string DisplayValue { get; set; }
+        public bool? DisplayValue { get; set; }
     }
 }
