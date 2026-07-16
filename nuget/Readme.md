@@ -51,7 +51,7 @@ Here's a simple example to get you started quickly:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.BarcodeGenerator;
 
 class Program
 {
@@ -60,7 +60,7 @@ class Program
         // Initialize the API client
         var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -120,7 +120,7 @@ The modern async/await pattern provides the best performance and code readabilit
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.BarcodeGenerator;
 
 public class Example
 {
@@ -128,7 +128,7 @@ public class Example
     {
         var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -156,7 +156,7 @@ If you need to use synchronous code, you can use the `Execute` method:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.BarcodeGenerator;
 
 public class Example
 {
@@ -164,7 +164,7 @@ public class Example
     {
         var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -197,7 +197,7 @@ The API client provides comprehensive error handling. Here are some examples:
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.BarcodeGenerator;
 
 public class Example
 {
@@ -205,7 +205,7 @@ public class Example
     {
         var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -253,7 +253,7 @@ public class Example
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.BarcodeGenerator;
 
 public class Example
 {
@@ -265,7 +265,7 @@ public class Example
         apiClient.SetMaxRetries(3);        // Retry up to 3 times (default: 0, max: 3)
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
-        var queryOptions = new QueryOptions {
+        var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -310,7 +310,7 @@ var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
-var queryOptions = new QueryOptions {
+var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -340,7 +340,7 @@ apiClient.SetLogger(message =>
     Console.WriteLine($"[LOG] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
 });
 
-var queryOptions = new QueryOptions {
+var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -362,7 +362,7 @@ var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]");
 apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3)
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
-var queryOptions = new QueryOptions {
+var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -378,7 +378,7 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
-var queryOptions = new QueryOptions {
+var queryOptions = new BarcodeGeneratorQueryOptions {
     data = "51001544700",
     type = "code128",
     lineColor = "#000000",
@@ -403,11 +403,11 @@ using (var apiClient = new BarcodeGeneratorAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "imageName": "57a22bf2-102a-4dfa-a65c-e521d05a9355.png",
+    "imageName": "cc85680f-a1d0-4627-89ff-7d7e53663a2b.png",
     "format": ".png",
     "type": "CODE128",
-    "expires": 1740173338237,
-    "downloadURL": "https://storage.googleapis.com/apiverve.appspot.com/barcodegenerator/57a22bf2-102a-4dfa-a65c-e521d05a9355.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1740173338&Signature=aFYDIpRA8Qy83jM7eXcknt8O0Pm5OqeLMNLgPOS6r3pTKcpha2u5pmYsweWEl%2BUsvW%2Fi2%2BKK7HtINdRItTuzQoxWkkyU2xBQAy%2B5jPCN0VoiGin6nEcvAxI6Vklw0nlp6yCnenUffaY1xNq%2FVfGQQTa74EOZweNRD7ZDblM7DRFtwMWQyJxkf5Yqae%2BtFvctVebgru%2B4Yj%2BXoNZaXckRNHMz5VxH7saAGxnVc0tKI0ypCg76cZeD8etIv2Jvv1VuhO8nKl6c4pE%2FeH16gJu2DWRAjRG%2F%2BXwwY7Uxpz%2BZ7VcfuNXbUuCDyQN2wMNgGaaZlR%2F4ISIs5N%2Bh29Ko8vnRBw%3D%3D"
+    "expires": 1766010012598,
+    "downloadURL": "https://storage.googleapis.com/apiverve/APIData/barcodegenerator/cc85680f-a1d0-4627-89ff-7d7e53663a2b.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010012&Signature=cV6ANXGGaVDdl5SOFZt3xm2haHBnOklW1zXQICvJlGNlF4kwYVP9i%2F1RAN8NBGxSUiMk4Zcro%2FJUb3W%2Fwy8jA86pyEXTwIjNAiGW94ikpKSXs6%2FiV42Rwv6u2gX%2B2FH7XYyixlwJ%2B%2FHpfGcvka6u01FDk%2F2TUcR7%2FxsZ%2FmXPU2KTrzsI6XttCGBcHhex3LdTv%2F8tzMJbSshbZn%2BGcRTddwv6dC4lCcTtGE6Bl2zqY9s92KIr9X%2F4xj34q4XKBzywgXES57QaVhZeGPPOOUfLtI3pAN8fVSyM%2B9NBMU7R46xyqJ0J8PSVpQZhhAHn03T%2B40rcNp26GXqauM9K%2BLwZRw%3D%3D"
   }
 }
 ```
