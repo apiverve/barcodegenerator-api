@@ -1,13 +1,13 @@
-# [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Barcode Generator is a simple tool for generating barcodes from data. It returns a URL to the generated image of the barcode.
+Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp.
 
 The Barcode Generator API provides a simple, reliable way to integrate barcode generator functionality into your applications. Built for developers who need production-ready barcode generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -175,7 +175,7 @@ go get github.com/apiverve/barcodegenerator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/barcodegenerator](https://docs.apiverve.com/ref/barcodegenerator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -238,7 +238,7 @@ A real response from the Barcode Generator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Barcode Generator API](https://apiverve.com/marketplace/barcodegenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
