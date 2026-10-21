@@ -1,6 +1,6 @@
 # Barcode Generator API - PHP Package
 
-Barcode Generator is a simple tool for generating barcodes from data. It returns a URL to the generated image of the barcode.
+Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp.
 
 ## Installation
 
@@ -91,11 +91,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/barcodegenerator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/barcodegenerator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

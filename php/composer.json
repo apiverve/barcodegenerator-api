@@ -1,7 +1,7 @@
 {
     "name": "apiverve/barcodegenerator",
-    "description": "Barcode Generator is a simple tool for generating barcodes from data. It returns a URL to the generated image of the barcode.",
-    "version": "1.2.0",
+    "description": "Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "barcodegenerator",
-        "barcode generator",
-        "barcode generation",
-        "barcode generate",
         "barcode api",
-        "barcode tool"
+        "barcode generator api",
+        "barcode generation api",
+        "generate barcode api",
+        "barcode image api"
     ],
-    "homepage": "https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/barcodegenerator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/barcodegenerator",
