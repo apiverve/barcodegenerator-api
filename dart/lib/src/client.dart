@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Barcode Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/barcodegenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/barcodegenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [data] (required) - The data you want to generate a barcode from (string)
