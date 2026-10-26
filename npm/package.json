@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/barcodegenerator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp.",
   "main": "index.js",
   "types": "index.d.ts",
