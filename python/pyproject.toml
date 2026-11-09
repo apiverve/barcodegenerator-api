@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-barcodegenerator"
-version = "1.2.4"
+version = "1.2.5"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp."
+description = "Barcode Generator creates downloadable barcode images from text or product codes in Code 128, Code 39, EAN-13, EAN-8, UPC-A, UPC-E, ITF-14, Codabar, MSI and other linear formats, with bar width, height and margin adjustable on paid plans. Each response provides a temporary image download link, the image size in pixels, file format, and expiration timestamp."
 keywords = ["barcode api", "barcode generator api", "barcode generation api", "generate barcode api", "barcode image api"]
 readme = "README.md"
 requires-python = ">=3.9"

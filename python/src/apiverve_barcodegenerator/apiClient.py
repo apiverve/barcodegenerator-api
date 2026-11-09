@@ -28,7 +28,12 @@ class BarcodegeneratorAPIClient:
         "type": {"type": "string", "required": True},
         "lineColor": {"type": "string", "required": False},
         "backgroundColor": {"type": "string", "required": False},
-        "displayValue": {"type": "boolean", "required": False}
+        "displayValue": {"type": "boolean", "required": False},
+        "barWidth": {"type": "integer", "required": False, "min": 1, "max": 10, "default": 4},
+        "height": {"type": "integer", "required": False, "min": 10, "max": 500, "default": 40},
+        "margin": {"type": "integer", "required": False, "min": 0, "max": 100, "default": 10},
+        "fontSize": {"type": "integer", "required": False, "min": 8, "max": 72, "default": 20},
+        "textMargin": {"type": "integer", "required": False, "min": 1, "max": 50, "default": 2}
     }
 
     # Format validation patterns
