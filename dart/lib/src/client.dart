@@ -54,6 +54,11 @@ final _formatPatterns = {
 /// * [lineColor] - The color of the barcode (default: #000000)
 /// * [backgroundColor] - The background color of the barcode (default: #ffffff)
 /// * [displayValue] - Whether to display the value below the barcode (default: true)
+/// * [barWidth] - Width of the narrowest bar in pixels (default: 4) [min: 1, max: 10]
+/// * [height] - Height of the bars in pixels (default: 40) [min: 10, max: 500]
+/// * [margin] - Quiet-zone margin around the barcode in pixels (default: 10) [min: 0, max: 100]
+/// * [fontSize] - Font size of the text label in pixels (default: 20) [min: 8, max: 72]
+/// * [textMargin] - Space between the bars and the text label in pixels (default: 2) [min: 1, max: 50]
 class BarcodegeneratorClient {
   final String apiKey;
   final String baseUrl;
@@ -66,6 +71,11 @@ class BarcodegeneratorClient {
     'lineColor': ValidationRule(type: 'string', required: false),
     'backgroundColor': ValidationRule(type: 'string', required: false),
     'displayValue': ValidationRule(type: 'boolean', required: false),
+    'barWidth': ValidationRule(type: 'integer', required: false, min: 1, max: 10),
+    'height': ValidationRule(type: 'integer', required: false, min: 10, max: 500),
+    'margin': ValidationRule(type: 'integer', required: false, min: 0, max: 100),
+    'fontSize': ValidationRule(type: 'integer', required: false, min: 8, max: 72),
+    'textMargin': ValidationRule(type: 'integer', required: false, min: 1, max: 50),
   };
 
   BarcodegeneratorClient(this.apiKey, {

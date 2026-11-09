@@ -61,6 +61,8 @@ class BarcodegeneratorData {
   String? type;
   num? expires;
   String? downloadURL;
+  num? imageWidth;
+  num? imageHeight;
 
   BarcodegeneratorData({
     this.imageName,
@@ -68,6 +70,8 @@ class BarcodegeneratorData {
     this.type,
     this.expires,
     this.downloadURL,
+    this.imageWidth,
+    this.imageHeight,
   });
 
   factory BarcodegeneratorData.fromJson(Map<String, dynamic> json) => BarcodegeneratorData(
@@ -76,6 +80,8 @@ class BarcodegeneratorData {
       type: json['type'],
       expires: json['expires'],
       downloadURL: json['downloadURL'],
+      imageWidth: json['imageWidth'],
+      imageHeight: json['imageHeight'],
     );
 }
 
