@@ -30,6 +30,8 @@ declare module '@apiverve/barcodegenerator' {
       type:        null | string;
       expires:     number | null;
       downloadURL: null | string;
+      imageWidth:  number | null;
+      imageHeight: number | null;
   }
 
   export default class barcodegeneratorWrapper {

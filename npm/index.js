@@ -30,7 +30,7 @@ class barcodegeneratorWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/barcodegenerator';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"data":{"type":"string","required":true},"type":{"type":"string","required":true},"lineColor":{"type":"string","required":false},"backgroundColor":{"type":"string","required":false},"displayValue":{"type":"boolean","required":false}};
+        this.validationRules = {"data":{"type":"string","required":true},"type":{"type":"string","required":true},"lineColor":{"type":"string","required":false},"backgroundColor":{"type":"string","required":false},"displayValue":{"type":"boolean","required":false},"barWidth":{"type":"integer","required":false,"min":1,"max":10,"default":4},"height":{"type":"integer","required":false,"min":10,"max":500,"default":40},"margin":{"type":"integer","required":false,"min":0,"max":100,"default":10},"fontSize":{"type":"integer","required":false,"min":8,"max":72,"default":20},"textMargin":{"type":"integer","required":false,"min":1,"max":50,"default":2}};
     }
 
     /**
