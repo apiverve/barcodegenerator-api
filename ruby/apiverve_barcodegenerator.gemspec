@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_barcodegenerator"
-  spec.version       = "1.2.4"
+  spec.version       = "1.2.5"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "Barcode Generator API - Ruby Client"
-  spec.description   = "Barcode Generator creates downloadable barcode images from text or product codes in Code 128 or Code 39 formats. Each response provides a temporary image download link, file format, and expiration timestamp."
+  spec.description   = "Barcode Generator creates downloadable barcode images from text or product codes in Code 128, Code 39, EAN-13, EAN-8, UPC-A, UPC-E, ITF-14, Codabar, MSI and other linear formats, with bar width, height and margin adjustable on paid plans. Each response provides a temporary image download link, the image size in pixels, file format, and expiration timestamp."
   spec.homepage      = "https://apiverve.com/marketplace/barcodegenerator?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"

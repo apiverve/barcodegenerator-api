@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'data' => { type: 'string', required: true }, 'type' => { type: 'string', required: true }, 'lineColor' => { type: 'string', required: false }, 'backgroundColor' => { type: 'string', required: false }, 'displayValue' => { type: 'boolean', required: false } }
+      VALIDATION_RULES = { 'data' => { type: 'string', required: true }, 'type' => { type: 'string', required: true }, 'lineColor' => { type: 'string', required: false }, 'backgroundColor' => { type: 'string', required: false }, 'displayValue' => { type: 'boolean', required: false }, 'barWidth' => { type: 'integer', required: false, min: 1, max: 10 }, 'height' => { type: 'integer', required: false, min: 10, max: 500 }, 'margin' => { type: 'integer', required: false, min: 0, max: 100 }, 'fontSize' => { type: 'integer', required: false, min: 8, max: 72 }, 'textMargin' => { type: 'integer', required: false, min: 1, max: 50 } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {

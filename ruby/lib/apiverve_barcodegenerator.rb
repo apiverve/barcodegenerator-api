@@ -4,6 +4,6 @@ require_relative "apiverve_barcodegenerator/client"
 
 module APIVerve
   module Barcodegenerator
-    VERSION = "1.2.4"
+    VERSION = "1.2.5"
   end
 end
