@@ -46,6 +46,12 @@ namespace APIVerve.API.BarcodeGenerator
 
         [JsonProperty("downloadURL")]
         public Uri DownloadUrl { get; set; }
+
+        [JsonProperty("imageWidth")]
+        public long? ImageWidth { get; set; }
+
+        [JsonProperty("imageHeight")]
+        public long? ImageHeight { get; set; }
     }
 
     public partial class Premium

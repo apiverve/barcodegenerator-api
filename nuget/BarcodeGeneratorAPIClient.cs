@@ -71,7 +71,12 @@ namespace APIVerve.API.BarcodeGenerator
             { "type", new ValidationRule { Type = "string", Required = true } },
             { "lineColor", new ValidationRule { Type = "string", Required = false } },
             { "backgroundColor", new ValidationRule { Type = "string", Required = false } },
-            { "displayValue", new ValidationRule { Type = "boolean", Required = false } }
+            { "displayValue", new ValidationRule { Type = "boolean", Required = false } },
+            { "barWidth", new ValidationRule { Type = "integer", Required = false, Min = 1, Max = 10 } },
+            { "height", new ValidationRule { Type = "integer", Required = false, Min = 10, Max = 500 } },
+            { "margin", new ValidationRule { Type = "integer", Required = false, Min = 0, Max = 100 } },
+            { "fontSize", new ValidationRule { Type = "integer", Required = false, Min = 8, Max = 72 } },
+            { "textMargin", new ValidationRule { Type = "integer", Required = false, Min = 1, Max = 50 } }
         };
 
         /// <summary>Format validation patterns</summary>

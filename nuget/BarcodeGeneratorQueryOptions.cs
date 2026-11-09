@@ -39,5 +39,35 @@ namespace APIVerve.API.BarcodeGenerator
         /// </summary>
         [JsonProperty("displayValue")]
         public bool? DisplayValue { get; set; }
+
+        /// <summary>
+        /// Width of the narrowest bar in pixels (default: 4)
+        /// </summary>
+        [JsonProperty("barWidth")]
+        public int? BarWidth { get; set; }
+
+        /// <summary>
+        /// Height of the bars in pixels (default: 40)
+        /// </summary>
+        [JsonProperty("height")]
+        public int? Height { get; set; }
+
+        /// <summary>
+        /// Quiet-zone margin around the barcode in pixels (default: 10)
+        /// </summary>
+        [JsonProperty("margin")]
+        public int? Margin { get; set; }
+
+        /// <summary>
+        /// Font size of the text label in pixels (default: 20)
+        /// </summary>
+        [JsonProperty("fontSize")]
+        public int? FontSize { get; set; }
+
+        /// <summary>
+        /// Space between the bars and the text label in pixels (default: 2)
+        /// </summary>
+        [JsonProperty("textMargin")]
+        public int? TextMargin { get; set; }
     }
 }
