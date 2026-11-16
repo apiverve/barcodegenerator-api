@@ -11,7 +11,7 @@ namespace APIVerve.API.BarcodeGenerator
     public class BarcodeGeneratorQueryOptions
     {
         /// <summary>
-        /// The data you want to generate a barcode from (string)
+        /// The data you want to generate a barcode from (string), up to 256 characters
         /// </summary>
         [JsonProperty("data")]
         public string Data { get; set; }
