@@ -24,7 +24,7 @@ class ValidationError(BarcodegeneratorAPIClientError):
 class BarcodegeneratorAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "data": {"type": "string", "required": True},
+        "data": {"type": "string", "required": True, "maxLength": 256},
         "type": {"type": "string", "required": True},
         "lineColor": {"type": "string", "required": False},
         "backgroundColor": {"type": "string", "required": False},
