@@ -49,7 +49,7 @@ final _formatPatterns = {
 /// For more information, visit: https://apiverve.com/marketplace/barcodegenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [data] (required) - The data you want to generate a barcode from (string)
+/// * [data] (required) - The data you want to generate a barcode from (string), up to 256 characters [maxLength: 256]
 /// * [type] (required) - The type of barcode you want to generate
 /// * [lineColor] - The color of the barcode (default: #000000)
 /// * [backgroundColor] - The background color of the barcode (default: #ffffff)
@@ -66,7 +66,7 @@ class BarcodegeneratorClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'data': ValidationRule(type: 'string', required: true),
+    'data': ValidationRule(type: 'string', required: true, maxLength: 256),
     'type': ValidationRule(type: 'string', required: true),
     'lineColor': ValidationRule(type: 'string', required: false),
     'backgroundColor': ValidationRule(type: 'string', required: false),
