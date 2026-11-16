@@ -72,7 +72,9 @@ paths:
               properties:
                 data:
                   type: string
-                  description: The data you want to generate a barcode from (string)
+                  description: >-
+                    The data you want to generate a barcode from (string), up to
+                    256 characters
                 type:
                   type: string
                   description: The type of barcode you want to generate
